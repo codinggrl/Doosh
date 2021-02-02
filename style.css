@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  margin: 10px;
+  padding: 10px;
+}
 
 #navbar {
   /* position: sticky; */
@@ -50,6 +54,16 @@
   border-bottom: #893a75 1px solid;
 }
 
+.burger {
+  display: none;
+}
+.burger div {
+  width: 20px;
+  height: 3px;
+  margin: 5px;
+  background-color: #282750;
+}
+
 /* Showcase section */
 
 .showcase__container {
@@ -59,6 +73,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
+  flex-wrap: wrap;
 }
 
 .showcase__img {
@@ -125,6 +140,7 @@
   align-items: center;
   padding: 20px;
   margin: 0 10rem;
+  flex-wrap: wrap;
 }
 .services__columns img {
   width: 100px;
@@ -165,7 +181,7 @@
 /* About us section */
 #about-us {
   background: #f8f9fa;
-  height: 85vh;
+  /* height: 85vh; */
 }
 .us__container {
   display: grid;
@@ -175,6 +191,7 @@
   grid-gap: 2rem;
   padding: 20px;
   margin: 0 10rem;
+  flex-wrap: wrap;
 }
 
 .us__container p {
@@ -207,10 +224,13 @@
 #about-us ul li {
   margin: 10px 0;
 }
+.us__container img {
+  margin-left: 50%;
+}
 
 /* Testemonial section */
 #testemonials {
-  height: 85vh;
+  /* height: 85vh; */
 }
 .testemonials__container {
   padding: 20px;
@@ -232,6 +252,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3em;
+  flex-wrap: wrap;
 }
 
 .testemonial img {
@@ -257,7 +278,10 @@
 
 /* Social section */
 #social {
-  height: 30vh;
+  /* height: 30vh; */
+}
+.social__container {
+  margin-top: 20px;
 }
 .social-icons {
   display: flex;
@@ -288,6 +312,8 @@
   width: 100%;
   object-fit: scale-down;
   transform: rotate(180deg);
+  /* position: fixed; */
+  height: 30vh;
 }
 
 /* back to top */
@@ -307,3 +333,5 @@
   left: 85%;
   z-index: 5;
 }
+
+/* Responisivness */

@@ -7,9 +7,6 @@ body {
   padding: 10px;
   box-sizing: border-box;
 }
-html {
-  width: 100%;
-}
 
 #navbar {
   /* position: sticky; */
@@ -32,6 +29,7 @@ html {
   list-style: none;
   margin: 20px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .navbar__container img {
@@ -77,14 +75,17 @@ html {
   align-items: center;
   justify-content: center;
   height: 80vh;
-
   margin: 20px;
+  flex-wrap: wrap;
+  flex-basis: 50%;
 }
 
 .showcase__img {
   max-width: 100%;
   margin-right: 10rem;
   object-fit: scale-down;
+  flex-wrap: wrap;
+  flex-basis: 50%;
 }
 .showcase__content {
   margin-left: 10rem;
@@ -156,6 +157,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .services__btn {
@@ -331,7 +333,7 @@ html {
 }
 
 /* Responisivness */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .navbar__ul {
     display: none;
   }
@@ -419,5 +421,100 @@ html {
   }
   .us__content {
     width: 50%;
+  }
+} */
+@media (max-width: 600px) {
+  .navbar__ul {
+    display: none;
+  }
+  .navbar__container img {
+    margin-left: 5px;
+  }
+
+  .showcase__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin-left: 5rem !important;
+  }
+
+  .showcase__img {
+    /* max-width: 70%;
+    margin-right: 10rem;
+    object-fit: scale-down; */
+    display: none;
+  }
+
+  .services__columns {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0 0rem;
+  }
+  .services__columns img {
+    width: 100px;
+    margin: 20px;
+  }
+  .services__column {
+    flex-basis: 100%;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .services__container {
+    margin-bottom: 15%;
+    margin: 20px;
+  }
+  .services__container h1 {
+    font-size: 1.2rem;
+    line-height: 0.8rem;
+  }
+
+  .services__columns {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  .services__btn {
+    margin-top: 20px 10px;
+  }
+
+  /* us cointainer */
+
+  .us__container {
+    max-width: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 !important;
+  }
+
+  .us__container p {
+    text-transform: uppercase;
+    color: #282750;
+    font-size: 1rem;
+    margin-left: 100px;
+  }
+
+  .first__container h1 {
+    font-size: 1.5rem;
+    line-height: 0.8rem;
+  }
+
+  #about-us ul {
+    margin-left: 80px;
+  }
+  .us__container p {
+    margin-top: 72px;
+  }
+  .first__container {
+    margin-top: 80px;
   }
 }

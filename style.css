@@ -67,7 +67,6 @@ body {
 }
 
 /* Showcase section */
-
 .showcase__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -179,7 +178,6 @@ body {
 #about-us {
   background: #f8f9fa;
   margin: 20px;
-  /* height: 85vh; */
 }
 .us__container {
   display: grid;
@@ -222,14 +220,8 @@ body {
 #about-us ul li {
   margin: 10px 0;
 }
-.us__container img {
-  /* margin-left: 50%; */
-}
 
 /* Testemonial section */
-#testemonials {
-  /* height: 85vh; */
-}
 .testemonials__container {
   padding: 20px;
   margin: 0 10rem;
@@ -333,96 +325,7 @@ body {
 }
 
 /* Responisivness */
-/* @media (max-width: 600px) {
-  .navbar__ul {
-    display: none;
-  }
-  .navbar__container img {
-    margin-left: 5px;
-  }
 
-  .showcase__container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0.5rem;
-  }
-
-  .showcase__img {
-    max-width: 70%;
-    margin-right: 10rem;
-    object-fit: scale-down;
-  }
-  .showcase__content {
-    margin-left: 1rem;
-  }
-  .showcase__container h1 {
-    font-size: 1rem;
-    font-weight: 0.5rem;
-    margin-top: 2rem;
-  }
-
-  .showcase__p {
-    font-size: 1rem;
-  }
-  .services__container h1 {
-    font-size: 1rem;
-  }
-
-  .services__columns {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .services__columns img {
-    width: 40px;
-    margin: 10px;
-  }
-
-  .services__columns p {
-    font-size: 10px;
-  }
-  .services__btn {
-    padding: 4px 16px;
-  }
-  .services__container button {
-    width: 70px;
-    height: 20px;
-    font-size: 5px;
-  }
-
-  .first__container {
-    margin-top: 50px;
-    width: 50%;
-  }
-  .first__container h1 {
-    font-size: 1rem;
-    line-height: 0.5rem;
-    transform: translateY(40px);
-  }
-
-  .us__container p {
-    margin-top: 50px;
-    text-transform: uppercase;
-    color: #282750;
-    margin-bottom: 20px;
-    font-size: 10px;
-  }
-  .us__container img {
-    width: 50%;
-  }
-
-  .us__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    grid-gap: 2rem;
-    padding: 20px;
-    margin: 0 10rem;
-    flex-wrap: wrap;
-  }
-  .us__content {
-    width: 50%;
-  }
-} */
 @media (max-width: 600px) {
   .navbar__ul {
     display: none;
@@ -441,9 +344,6 @@ body {
   }
 
   .showcase__img {
-    /* max-width: 70%;
-    margin-right: 10rem;
-    object-fit: scale-down; */
     display: none;
   }
 
@@ -483,8 +383,6 @@ body {
   .services__btn {
     margin-top: 20px 10px;
   }
-
-  /* us cointainer */
 
   .us__container {
     max-width: 100vh;

@@ -2,11 +2,6 @@
   margin: 0;
   padding: 0;
 }
-body {
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-}
 
 #navbar {
   /* position: sticky; */
@@ -19,7 +14,6 @@ body {
   height: 70px;
   display: flex;
   justify-content: space-between;
-  padding: 0 !important;
 }
 
 .navbar__ul {
@@ -177,7 +171,8 @@ body {
 /* About us section */
 #about-us {
   background: #f8f9fa;
-  margin: 20px;
+  margin: 0px;
+  margin-top: 100px;
 }
 .us__container {
   display: grid;
@@ -194,14 +189,14 @@ body {
   text-transform: uppercase;
   color: #282750;
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  transform: translateX(-90px);
 }
-
 .us__container ul {
   display: inline-block;
 }
 
-.first__container h1 {
+/* .first__container h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -212,6 +207,13 @@ body {
   line-height: 1rem;
   position: relative;
   transform: translateY(70px);
+} */
+.first__container h1 {
+  text-transform: uppercase;
+  color: #282750;
+  font-size: 1.5;
+  line-height: 1rem;
+  transform: translateY(160px);
 }
 
 #about-us ul {
@@ -268,7 +270,6 @@ body {
 
 /* Social section */
 #social {
-  /* height: 30vh; */
 }
 .social__container {
   margin-top: 20px;
@@ -334,6 +335,9 @@ body {
     margin-left: 5px;
   }
 
+  .showcase__container {
+    grid-template-columns: none;
+  }
   .showcase__content {
     display: flex;
     justify-content: center;
@@ -366,10 +370,10 @@ body {
   }
   .services__container {
     margin-bottom: 15%;
-    margin: 20px;
+    margin-left: 60px;
   }
   .services__container h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 0.8rem;
   }
 
@@ -414,5 +418,60 @@ body {
   }
   .first__container {
     margin-top: 80px;
+    margin-left: 30px;
+  }
+  .testemonials__container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .testemonials__container h1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #282750;
+    font-size: 1.5rem;
+    line-height: 0.8rem;
+  }
+  .testemonials__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3em;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .testemonial img {
+    height: 40px;
+    width: 40px;
+  }
+  .testemonial {
+    border-left: 3px solid #893a75;
+    margin-right: 50px;
+    padding-left: 15px;
+  }
+  .user-details {
+    display: inline-block;
+    font-size: 12px !important;
+  }
+  .testemonial p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .social__container h1 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    line-height: 0.8rem;
+  }
+  .social__container img {
+    width: 40px;
+  }
+  .social-icons a:hover img {
+    transform: translateY(-10px);
   }
 }
